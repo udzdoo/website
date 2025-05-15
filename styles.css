@@ -7,13 +7,14 @@
   --text-light: #fff;
   --radius: 6px;
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: Arial, sans-serif; color: var(--text-dark); line-height: 1.6; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body.lang-sr .en, body.lang-en .sr { display: none; }
+body.lang-sr .sr, body.lang-en .en { display: block; }
 .lang-switcher { position: absolute; top: 1rem; right: 1rem; }
-.lang-switcher button { background: none; border: none; font-size: 1.5rem; cursor: pointer; margin-left: 0.5rem; }
+.lang-switcher button { background: none; border: none; font-size: 1.5rem; cursor: pointer; margin: 0 0.25rem; }
 .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: var(--dark-blue); }
-.navbar .logo { color: var(--light-blue); font-size: 1.5rem; text-decoration: none; }
-.nav-links { list-style: none; display: flex; gap: 1rem; }
+.logo { color: var(--light-blue); font-size: 1.5rem; text-decoration: none; }
+.nav-links { display: flex; gap: 1rem; list-style: none; }
 .nav-links a { color: var(--text-light); text-decoration: none; }
 .hero { background: var(--gray-light); padding: 4rem 2rem; position: relative; }
 .hero-content { display: flex; align-items: center; justify-content: space-between; }
@@ -21,24 +22,23 @@ body { font-family: Arial, sans-serif; color: var(--text-dark); line-height: 1.6
 .text-block h1 { font-size: 2.5rem; margin-bottom: 1rem; }
 .subhead { font-size: 1.2rem; margin-bottom: 1.5rem; }
 .hero-ctas .btn { margin-right: 1rem; }
-.btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: var(--radius); text-decoration: none; font-weight: bold; }
+.btn { padding: 0.75rem 1.5rem; border-radius: var(--radius); font-weight: bold; text-decoration: none; }
 .btn-primary { background: var(--light-blue); color: var(--text-light); }
 .btn-outline { border: 2px solid var(--light-blue); color: var(--light-blue); }
-.countdown-timer { margin-top: 1.5rem; font-size: 1rem; }
-#guarantee { margin-top: 1rem; font-style: italic; }
+.countdown-timer { margin-top: 1.5rem; }
+.guarantee { margin-top: 1rem; font-style: italic; }
+.hero-image img { width: 100%; border-radius: var(--radius); }
 .demo-section, .video-demo, .industries, .cases, .pricing { padding: 2rem; }
-.video-demo { text-align: center; }
-.video-demo video { max-width: 100%; height: auto; }
-.industries { background: var(--gray-light); }
+.video-demo h2, .industries h2, .cases h2, .pricing h2 { text-align: center; margin-bottom: 1rem; }
+.video-demo iframe { display: block; margin: 0 auto; max-width: 100%; }
 .use-cases { display: flex; gap: 1rem; flex-wrap: wrap; }
-.use-cases .case { flex: 1 1 calc(20% - 1rem); background: var(--text-light); border-radius: var(--radius); overflow: hidden; text-align: center; padding: 1rem; }
-.use-cases .case img { width: 100%; height: auto; display: block; margin-bottom: 0.5rem; }
+.use-cases .case { flex: 1 1 calc(20% - 1rem); background: var(--text-light); border-radius: var(--radius); text-align: center; padding: 1rem; }
+.use-cases .case img { width: 100%; border-radius: var(--radius); margin-bottom: 0.5rem; }
 .cases .case { background: var(--gray-light); padding: 1rem; border-radius: var(--radius); margin-bottom: 1rem; }
-.pricing { background: var(--gray-light); }
 .pricing-cards { display: flex; gap: 1rem; flex-wrap: wrap; }
-.pricing-card { background: var(--text-light); padding: 1.5rem; flex: 1 1 calc(33% - 1rem); border-radius: var(--radius); text-align: center; }
+.pricing-card { background: var(--text-light); padding: 1.5rem; border-radius: var(--radius); text-align: center; flex: 1 1 calc(33% - 1rem); }
 .pricing-card.featured { border: 2px solid var(--light-blue); }
-.badge { display: inline-block; margin-top: 1rem; padding: 0.25rem 0.5rem; background: var(--light-blue); color: var(--text-light); border-radius: var(--radius); font-size: 0.85rem; }
+.badge { display: inline-block; margin-top: 1rem; padding: 0.25rem 0.5rem; background: var(--light-blue); color: var(--text-light); border-radius: var(--radius); }
 .footer { background: var(--dark-blue); color: var(--text-light); padding: 2rem; text-align: center; }
 .footer h2 { margin-bottom: 1rem; }
 .contact-form { display: flex; flex-direction: column; gap: 0.75rem; max-width: 400px; margin: 0 auto 1rem; }
