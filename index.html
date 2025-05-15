@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Custom Chatbots – Plati kad budeš zadovoljan</title>
+  <title>custom chat bots – Plati kad budeš zadovoljan</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="hero">
     <nav class="navbar">
-      <a href="#" class="logo">YourBotCo</a>
+      <a href="#" class="logo">custom chat bots</a>
       <ul class="nav-links">
         <li><a href="#industries">Industrije</a></li>
         <li><a href="#cases">Studije slučaja</a></li>
@@ -42,6 +42,22 @@
   </header>
   <section id="demo" class="demo-section">
     <div id="chat-widget"></div>
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '67db2750934578efd511a098' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production',
+              voice: {
+                url: "https://runtime-api.voiceflow.com"
+              }
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
   </section>
   <section id="industries" class="industries">
     <h2>Rešenja po industrijama</h2>
@@ -91,7 +107,7 @@
       <textarea name="message" rows="4" placeholder="Vaša poruka"></textarea>
       <button type="submit" class="btn btn-primary">Pošalji</button>
     </form>
-    <p class="small">© 2025 YourBotCo. Sva prava zadržana.</p>
+    <p class="small">© 2025 custom chat bots. Sva prava zadržana.</p>
   </footer>
   <script src="script.js"></script>
 </body>
