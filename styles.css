@@ -9,11 +9,13 @@
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: Arial, sans-serif; color: var(--text-dark); line-height: 1.6; }
-.navbar { display: flex; justify-content: space-between; padding: 1rem 2rem; background: var(--dark-blue); }
+.lang-switcher { position: absolute; top: 1rem; right: 1rem; }
+.lang-switcher button { background: none; border: none; font-size: 1.5rem; cursor: pointer; margin-left: 0.5rem; }
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: var(--dark-blue); }
 .navbar .logo { color: var(--light-blue); font-size: 1.5rem; text-decoration: none; }
 .nav-links { list-style: none; display: flex; gap: 1rem; }
 .nav-links a { color: var(--text-light); text-decoration: none; }
-.hero { background: var(--gray-light); padding: 4rem 2rem; }
+.hero { background: var(--gray-light); padding: 4rem 2rem; position: relative; }
 .hero-content { display: flex; align-items: center; justify-content: space-between; }
 .text-block { max-width: 50%; }
 .text-block h1 { font-size: 2.5rem; margin-bottom: 1rem; }
@@ -23,16 +25,16 @@ body { font-family: Arial, sans-serif; color: var(--text-dark); line-height: 1.6
 .btn-primary { background: var(--light-blue); color: var(--text-light); }
 .btn-outline { border: 2px solid var(--light-blue); color: var(--light-blue); }
 .countdown-timer { margin-top: 1.5rem; font-size: 1rem; }
-.demo-section { background: var(--text-light); padding: 2rem; text-align: center; }
-.video-demo { padding: 2rem; text-align: center; }
-.video-demo iframe { max-width: 100%; height: auto; border: none; }
-.industries { padding: 2rem; background: var(--gray-light); }
+#guarantee { margin-top: 1rem; font-style: italic; }
+.demo-section, .video-demo, .industries, .cases, .pricing { padding: 2rem; }
+.video-demo { text-align: center; }
+.video-demo video { max-width: 100%; height: auto; }
+.industries { background: var(--gray-light); }
 .use-cases { display: flex; gap: 1rem; flex-wrap: wrap; }
 .use-cases .case { flex: 1 1 calc(20% - 1rem); background: var(--text-light); border-radius: var(--radius); overflow: hidden; text-align: center; padding: 1rem; }
 .use-cases .case img { width: 100%; height: auto; display: block; margin-bottom: 0.5rem; }
-.cases { padding: 2rem; }
 .cases .case { background: var(--gray-light); padding: 1rem; border-radius: var(--radius); margin-bottom: 1rem; }
-.pricing { padding: 2rem; background: var(--gray-light); }
+.pricing { background: var(--gray-light); }
 .pricing-cards { display: flex; gap: 1rem; flex-wrap: wrap; }
 .pricing-card { background: var(--text-light); padding: 1.5rem; flex: 1 1 calc(33% - 1rem); border-radius: var(--radius); text-align: center; }
 .pricing-card.featured { border: 2px solid var(--light-blue); }
