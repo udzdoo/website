@@ -9,25 +9,29 @@
 </head>
 <body>
   <header class="hero">
+    <div class="lang-switcher">
+      <button id="lang-sr">🇷🇸</button>
+      <button id="lang-en">🇬🇧</button>
+    </div>
     <nav class="navbar">
       <a href="#" class="logo">custom chat bots</a>
       <ul class="nav-links">
-        <li><a href="#industries">Industrije</a></li>
-        <li><a href="#video-demo">Video</a></li>
-        <li><a href="#cases">Studije slučaja</a></li>
-        <li><a href="#pricing">Cenovnik</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#industries" id="nav-industries">Industrije</a></li>
+        <li><a href="#video-demo" id="nav-video">Video</a></li>
+        <li><a href="#cases" id="nav-cases">Studije slučaja</a></li>
+        <li><a href="#pricing" id="nav-pricing">Cenovnik</a></li>
+        <li><a href="#contact" id="nav-contact">Kontaktirajte nas</a></li>
       </ul>
     </nav>
     <div class="hero-content">
       <div class="text-block">
-        <h1>Custom Chatbotovi — Plati Tek Kad Budeš 100 % Zadovoljan</h1>
-        <p class="subhead">
+        <h1 id="title">Custom Chatbotovi — Plati Tek Kad Budeš 100 % Zadovoljan</h1>
+        <p class="subhead" id="subtitle">
           Iskoristi <strong>20 % popusta</strong> na sve projekte do <strong>1. jula 2025.</strong>
         </p>
         <div class="hero-ctas">
-          <a href="#demo" class="btn btn-primary">Isprobaj live demo</a>
-          <a href="#contact" class="btn btn-outline">Zatraži ponudu</a>
+          <a href="#demo" class="btn btn-primary" id="cta-demo">Isprobaj live demo</a>
+          <a href="#contact" class="btn btn-outline" id="cta-contact">Zatraži ponudu</a>
         </div>
         <div class="countdown-timer">
           <span id="days">00</span>d 
@@ -36,9 +40,10 @@
           <span id="secs">00</span>s 
           <small>do isteka popusta</small>
         </div>
+        <p id="guarantee">Plaćanje po zadovoljstvu važi samo za klijente iz Srbije. Za strane klijente je potrebna uplata depozita od 20 % pre početka projekta.</p>
       </div>
       <div class="hero-image">
-        <img src="https://source.unsplash.com/featured/?chatbot" alt="Chatbot ilustracija" />
+        <img src="https://via.placeholder.com/600x400?text=Chatbot+Illustration" alt="Chatbot ilustracija" />
       </div>
     </div>
   </header>
@@ -63,39 +68,34 @@
 
   <section id="video-demo" class="video-demo">
     <h2>Video Demonstracija</h2>
-    <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/8-Vy3aEOZNw"
-      title="Chatbot Demo" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+    <video width="560" height="315" controls src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"></video>
   </section>
 
   <section id="industries" class="industries">
     <h2>Rešenja po Industrijama</h2>
     <div class="use-cases">
       <div class="case">
-        <img src="https://source.unsplash.com/featured/?ecommerce" alt="E-commerce Chatbot">
+        <img src="https://via.placeholder.com/400x300?text=E-commerce+Chatbot" alt="E-commerce Chatbot">
         <h3>E-commerce</h3>
-        <p>Instantni odgovori na pitanja o proizvodima, personalizovane preporuke i automatski oporavak napuštenih korpi.</p>
+        <p>Instantni odgovori na pitanja o proizvodima, personalizovane preporuke i automatski oporavak korpi.</p>
       </div>
       <div class="case">
-        <img src="https://source.unsplash.com/featured/?healthcare" alt="Healthcare Chatbot">
+        <img src="https://via.placeholder.com/400x300?text=Healthcare+Chatbot" alt="Healthcare Chatbot">
         <h3>Zdravstvo</h3>
         <p>Automatizovano zakazivanje termina, podsećanja na terapiju i prikupljanje povratnih informacija, 24/7.</p>
       </div>
       <div class="case">
-        <img src="https://source.unsplash.com/featured/?finance" alt="Finance Chatbot">
+        <img src="https://via.placeholder.com/400x300?text=Finance+Chatbot" alt="Finance Chatbot">
         <h3>Finansije</h3>
         <p>Praćenje transakcija, detekcija sumnjivih aktivnosti i pomoć pri upravljanju budžetom korisnika.</p>
       </div>
       <div class="case">
-        <img src="https://source.unsplash.com/featured/?education" alt="Education Chatbot">
+        <img src="https://via.placeholder.com/400x300?text=Education+Chatbot" alt="Education Chatbot">
         <h3>Obrazovanje</h3>
         <p>Pretraživanje nastavnih materijala, automatska provera kvizova i interaktivni tutorijali za studente.</p>
       </div>
       <div class="case">
-        <img src="https://source.unsplash.com/featured/?realestate" alt="Real Estate Chatbot">
+        <img src="https://via.placeholder.com/400x300?text=Real+Estate+Chatbot" alt="Real Estate Chatbot">
         <h3>Nekretnine</h3>
         <p>Automatsko zakazivanje razgledanja, procena cena i selekcija ponuda za brz i profesionalan rad agenta.</p>
       </div>
